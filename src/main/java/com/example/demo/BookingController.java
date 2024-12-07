@@ -21,6 +21,11 @@ public class BookingController {
 
     @Autowired
     private BookingRepository bookingRepository;
+    
+    @Autowired
+    private PrescriptionRepository prescriptionRepository; // Inject the PrescriptionRepository
+
+
 
     @PostMapping
     public Booking createBooking(
